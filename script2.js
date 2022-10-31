@@ -11,31 +11,32 @@ var phconcat= "";
 generateBtn.addEventListener("click", generatePassword);
 
 function generatePassword() {
+    var randomString = "";
+    var uppercaseconfirm = confirm("Would you like to use UPPERCASE CHARACTERS in your password?");
+    var lowercaseconfirm = confirm("Would you like to use LOWERCASE CHARACTERS in your password?");
+    var numsconfirm = confirm("Would you like to use NUMBER CHARACTERS in your password?");
+    var especialconfirm = confirm ("Would you like to use SPECIAL CHARACTERS in your password?");
+    var pwlengthconfirm= prompt("How many characters would you like to use in your password- Character Limit- 8-128");
 
-    var uppercase = confirm("Would you like to use UPPERCASE CHARACTERS in your password?");
-    var lowercase = confirm("Would you like to use LOWERCASE CHARACTERS in your password?");
-    var nums = confirm("Would you like to use NUMBER CHARACTERS in your password?");
-    var especial = confirm ("Would you like to use SPECIAL CHARACTERS in your password?");
-    var pwlength= prompt("How many characters would you like to use in your password- Character Limit- 8-128");
-
-    if(pwlength < 8 || pwlength > 128) {
+    if(pwlengthconfirm < 8 || pwlengthconfirm > 128) {
         alert("Please submit a password within character length limitations- Char limit: 8-128");
-        var pwlength= prompt("How many characters would you like to use in your password- Character Limit- 8-128");
+        var pwlengthconfirm= prompt("How many characters would you like to use in your password- Character Limit- 8-128");
     }
-    if (uppercase) {
+    if (uppercaseconfirm) {
         phconcat += uppercase;
     }
-    if (lowercase) {
+    if (lowercaseconfirm) {
         phconcat += lowercase;
     }
-    if(nums) {
+    if(numsconfirm) {
         phconcat += nums;
     }
-    if(especial) {
+    if(especialconfirm) {
         phconcat += especial;
     }
-    for (var i = 0; i < pwlength; i++) {
+    for (var i = 0; i < pwlengthconfirm; i++) {
         randomString += phconcat.charAt(Math.floor(Math.random() * phconcat.length));
     }
+
     password.value = randomString;
 }
