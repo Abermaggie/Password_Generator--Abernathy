@@ -17,18 +17,17 @@ body {
   background-color: #f9fbfd;
 }
 
-/* padding for header */
+/* padding for header combined to consolidate code and px units converted to percentage to help with mobile scaling*/
 .wrapper {
-  padding-top: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 5%,4%,4%,3.5%;
 }
 
 /* Changes the format and layout of the header */
+/* px units converted to percentage. */
 header {
   text-align: center;
-  padding: 20px;
-  padding-top: 0px;
+  padding: 2.5%;
+  padding-top: 0%;
   color: hsl(206, 17%, 28%);
 }
 
@@ -36,13 +35,13 @@ header {
 .card {
   background-color: hsl(0, 0%, 100%);
   border-radius: 5px;
-  border-width: 1px;
+  border-width: 1%;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
   color: hsl(206, 17%, 28%);
-  font-size: 18px;
+  font-size:115%;
   margin: 0 auto;
-  max-width: 800px;
-  padding: 30px 40px;
+  max-width: 70%;
+  padding: 2.5% 3.5%;
 }
 /* This allows for the line that breaks up the body before the info box. */
 .card-header::after {
@@ -85,9 +84,9 @@ header {
     0px;
   color: hsl(0, 0%, 100%);
   display: inline-block;
-  font-size: 22px;
-  line-height: 22px;
-  margin: 16px 16px 16px 20px;
+  font-size: 125%;
+  line-height: 65%;
+  margin: 3% 3% 3% 2%;
   padding: 14px 34px;
   text-align: center;
   cursor: pointer;
@@ -109,14 +108,12 @@ button {
   border: none;
   display: block;
   width: 100%;  
-  padding-top: 15px; /*consolidate padding into one */
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 85px;
+/* Padding consolidated into one string and adjusted to percentage for mobile re-sizing */
+  padding: 2% 2% 12% 2%;
   font-size: 1.2rem;
   text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 1.5%;
+  margin-bottom: 1.5%;
   border: 2px dashed #c0c7cf;
   border-radius: 6px;
   resize: none;
