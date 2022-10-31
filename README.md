@@ -1,9 +1,9 @@
 # Password_Generator--Abernathy
 
 ## Description
-This project's purpose is to showcase the basic JavaScript skills that can be used to randomly generate a password.  Utilizing variables, prompts, and if statements, the user is able to choose from a list of criteria to customize their password while allowing for a randomized generation that results in a strong password.  
+This project's purpose is to showcase the basic JavaScript skills that can be used as a tool to generate a randomized password.  Utilizing variables, prompts, and if statements, the user is able to choose from a list of criteria to customize their password while allowing for a randomized generation that results in a strong password.  
 
-This password will have no standard logic but in allowing the user to choose the length and criteria used when creating their password, they can choose customized symbols and case groups that they are more likely to remember.
+This password will have no standard logic but in allowing the user to choose the length and criteria used when creating their password, they can choose lengths, customized symbols, and case groups that they are more likely to remember.
 
 ## Visuals/Usage
 
