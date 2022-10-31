@@ -17,6 +17,8 @@ Video Clip #3: Viewing the webpage and the responsive design based on media view
 https://drive.google.com/file/d/1iTtsLdtXQK9-pp-weQMqokGdv2lsTOVu/view
 
 Screen Shot #1: 
+<img width="443" alt="Password Gen- 576px" src="https://user-images.githubusercontent.com/114010430/198924545-8e730750-69f6-45b2-a64c-2b89f51bc814.png">
+
 
 Deployed Github Website:
 
