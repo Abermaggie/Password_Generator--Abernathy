@@ -1,18 +1,17 @@
-var generatebtn = document.querySelector("#generate");
+var generateBtn = document.querySelector("#generate");
 var password = document.querySelector("#password");
 
 var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var lowercase = "abcdefghijklmnopqrsuvwxyz";
 var nums = "0123456789";
 var especial= "!#$%&'()*+-./:;<=>?@[\^_\{|}~";
-var password= "";
+var phconcat= "";
 
 
-generatebtn.addEventListener("click", generatePassword);
+generateBtn.addEventListener("click", generatePassword);
 
 function generatePassword() {
-    // password.value === "";
-    // var randomString ="";
+
     var uppercase = confirm("Would you like to use UPPERCASE CHARACTERS in your password?");
     var lowercase = confirm("Would you like to use LOWERCASE CHARACTERS in your password?");
     var nums = confirm("Would you like to use NUMBER CHARACTERS in your password?");
@@ -23,17 +22,20 @@ function generatePassword() {
         alert("Please submit a password within character length limitations- Char limit: 8-128");
         var pwlength= prompt("How many characters would you like to use in your password- Character Limit- 8-128");
     }
+    if (uppercase) {
+        phconcat += uppercase;
+    }
     if (lowercase) {
-        password += uppercase;
+        phconcat += lowercase;
     }
     if(nums) {
-        password += nums;
+        phconcat += nums;
     }
     if(especial) {
-        password += especial;
+        phconcat += especial;
     }
-    if(var i = 0; i<pwlength,i++) {
-        randomString += password.charAt(Math.random()*password.length);
+    for (var i = 0; i < pwlength; i++) {
+        randomString += phconcat.charAt(Math.floor(Math.random() * phconcat.length));
     }
     password.value = randomString;
 }
