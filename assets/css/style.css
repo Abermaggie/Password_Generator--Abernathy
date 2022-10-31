@@ -120,11 +120,16 @@ button {
   overflow: hidden;
 }
 
-@media (max-width: 690px) {
+
+
+@media (max-width: 768px) {
   .btn {
-    font-size: 1rem;
-    margin: 16px 0px 0px 0px;
+    font-size: 1.5rem;
+    margin: 5% 0% 0% 0%;
     padding: 10px 15px;
+  }
+  h2{
+    text-align: center;
   }
 
   #password {
@@ -132,8 +137,11 @@ button {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 576px) {
   .btn {
-    font-size: 0.8rem;
+    font-size: 1rem;
+  }
+  h2 {
+    text-align: center;
   }
 }
